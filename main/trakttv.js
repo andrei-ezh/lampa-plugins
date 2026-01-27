@@ -1,4 +1,4 @@
 (function () {
     'use strict';
-    Lampa.Utils.putScriptAsync(['https://lampame.github.io/main/TraktTV/TraktTV.js'], function () { });
+    Lampa.Utils.putScriptAsync(['https://andrei-ezh.github.io/lampa-plugins/main/TraktTV/TraktTV.js'], function () { });
 })();
