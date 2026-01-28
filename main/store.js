@@ -23,7 +23,7 @@
         if (e.name == 'main') {
             e.body.find('[data-component="pirate_store"]').on('hover:enter', function() {
                 Lampa.Extensions.show({
-                    store: 'https://lampaplugins.github.io/store/extensions.json',
+                    store: 'https://andrei-ezh.github.io/lampa-plugins/main/extensions.json',
                     with_installed: true
                 });
             });
