@@ -65,6 +65,9 @@ https://lampame.github.io/main/pubtorr.js
 ```
 https://andrei-ezh.github.io/lampa-plugins/main/pubtorr/pubtorr.js
 ```
+```
+https://andrei-ezh.github.io/lampa-plugins/main/parser/parser.js
+```
 9. Добавление парсер и torrserver
 ```
 http://cub.red/plugin/etor
@@ -102,6 +105,9 @@ https://andrei-ezh.github.io/lampa-plugins/main/tracks/tracks.js
 ```
 https://nb557.github.io/plugins/rating.js
 ```
+```
+https://andrei-ezh.github.io/lampa-plugins/main/raiting.js
+```
 13. Интерфейс Мод
 ```
 https://bywolf88.github.io/lampa-plugins/interface_mod.js
@@ -115,4 +121,11 @@ https://lampame.github.io/main/trakttv.js
 ```
 ```
 https://andrei-ezh.github.io/lampa-plugins/main/TraktTV/TraktTV.js
+```
+15. NUMParser
+```
+https://num.jac-red.ru/plugin/nmprs.js
+```
+```
+https://andrei-ezh.github.io/lampa-plugins/main/NUMParser.js
 ```
