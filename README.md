@@ -58,6 +58,7 @@ https://andrei-ezh.github.io/lampa-plugins/main/its/its.js
 https://lampame.github.io/main/infuseSave.js
 ```
 Save all - Сохранение всех файлов с помощью Shortcuts, потребуется установка [команды](https://www.icloud.com/shortcuts/406d7f6bdfcf466da153a38dea6bb663)
+
 8. Публичные парсеры
 ```
 https://lampame.github.io/main/pubtorr.js
