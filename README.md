@@ -129,3 +129,7 @@ https://num.jac-red.ru/plugin/nmprs.js
 ```
 https://andrei-ezh.github.io/lampa-plugins/main/NUMParser.js
 ```
+Для того, чтобы скопировать код из недостумнго плагина, нужно использовать: 
+```
+curl -L https://.............js | pbcopy
+```
