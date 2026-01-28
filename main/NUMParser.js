@@ -204,72 +204,72 @@
 
     var CATEGORY_VISIBILITY = {
         legends: {
-            title: '–Ґ–Њ–њ —Д–Є–ї—М–Љ—Л',
+            title: 'Топ фильмы',
             visible: Lampa.Storage.get('numparser_category_legends', true)
         },
         k4_new: {
-            title: '–Т –≤—Л—Б–Њ–Ї–Њ–Љ –Ї–∞—З–µ—Б—В–≤–µ (–љ–Њ–≤—Л–µ)',
+            title: 'В высоком качестве (новые)',
             visible: Lampa.Storage.get('numparser_category_k4_new', true)
         },
         movies_new: {
-            title: '–Э–Њ–≤—Л–µ —Д–Є–ї—М–Љ—Л',
+            title: 'Новые фильмы',
             visible: Lampa.Storage.get('numparser_category_movies_new', true)
         },
         russian_new_movies: {
-            title: '–Э–Њ–≤—Л–µ —А—Г—Б—Б–Ї–Є–µ —Д–Є–ї—М–Љ—Л',
+            title: 'Новые русские фильмы',
             visible: Lampa.Storage.get('numparser_category_russian_new_movies', true)
         },
         all_tv: {
-            title: '–°–µ—А–Є–∞–ї—Л',
+            title: 'Сериалы',
             visible: Lampa.Storage.get('numparser_category_all_tv', true)
         },
         russian_tv: {
-            title: '–†—Г—Б—Б–Ї–Є–µ —Б–µ—А–Є–∞–ї—Л',
+            title: 'Русские сериалы',
             visible: Lampa.Storage.get('numparser_category_russian_tv', true)
         },
         anime: {
-            title: '–Р–љ–Є–Љ–µ',
+            title: 'Аниме',
             visible: Lampa.Storage.get('numparser_category_anime', true)
         },
         k4: {
-            title: '–Т –≤—Л—Б–Њ–Ї–Њ–Љ –Ї–∞—З–µ—Б—В–≤–µ',
+            title: 'В высоком качестве',
             visible: Lampa.Storage.get('numparser_category_k4', true)
         },
         movies: {
-            title: '–§–Є–ї—М–Љ—Л',
+            title: 'Фильмы',
             visible: Lampa.Storage.get('numparser_category_movies', true)
         },
         russian_movies: {
-            title: '–†—Г—Б—Б–Ї–Є–µ —Д–Є–ї—М–Љ—Л',
+            title: 'Русские фильмы',
             visible: Lampa.Storage.get('numparser_category_russian_movies', true)
         },
         cartoons: {
-            title: '–Ь—Г–ї—М—В—Д–Є–ї—М–Љ—Л',
+            title: 'Мультфильмы',
             visible: Lampa.Storage.get('numparser_category_cartoons', true)
         },
         cartoons_tv: {
-            title: '–Ь—Г–ї—М—В—Б–µ—А–Є–∞–ї—Л',
+            title: 'Мультсериалы',
             visible: Lampa.Storage.get('numparser_category_cartoons_tv', true)
         },
 
         year_1980_1989: {
-            title: '–§–Є–ї—М–Љ—Л 1980-1989',
+            title: 'Фильмы 1980-1989',
             visible: Lampa.Storage.get('numparser_year_1980_1989', false)
         },
         year_1990_1999: {
-            title: '–§–Є–ї—М–Љ—Л 1990-1999',
+            title: 'Фильмы 1990-1999',
             visible: Lampa.Storage.get('numparser_year_1990_1999', false)
         },
         year_2000_2009: {
-            title: '–§–Є–ї—М–Љ—Л 2000-2009',
+            title: 'Фильмы 2000-2009',
             visible: Lampa.Storage.get('numparser_year_2000_2009', false)
         },
         year_2010_2019: {
-            title: '–§–Є–ї—М–Љ—Л 2010-2019',
+            title: 'Фильмы 2010-2019',
             visible: Lampa.Storage.get('numparser_year_2010_2019', true)
         },
         year_2020_current: {
-            title: '–§–Є–ї—М–Љ—Л 2020-' + currentYear,
+            title: 'Фильмы 2020-' + currentYear,
             visible: Lampa.Storage.get('numparser_year_2020_current', true)
         }
     };
@@ -472,7 +472,7 @@
                 if (isYearVisible(year)) {
                     (function (y) {
                         partsData.push(function (callback) {
-                            makeRequest(CATEGORIES['movies_id_' + y], '–§–Є–ї—М–Љ—Л ' + y + ' –≥–Њ–і–∞', callback);
+                            makeRequest(CATEGORIES['movies_id_' + y], 'Фильмы ' + y + ' года', callback);
                         });
                     })(year);
                 }
@@ -709,8 +709,8 @@ function startPlugin() {
                 default: Lampa.Storage.get('numparser_hide_watched', "false") === "true"
             },
             field: {
-                name: '–°–Ї—А—Л—В—М –њ—А–Њ—Б–Љ–Њ—В—А–µ–љ–љ—Л–µ',
-                description: '–°–Ї—А—Л–≤–∞—В—М –њ—А–Њ—Б–Љ–Њ—В—А–µ–љ–љ—Л–µ —Д–Є–ї—М–Љ—Л –Є —Б–µ—А–Є–∞–ї—Л'
+                name: 'Скрыть просмотренные',
+                description: 'Скрывать просмотренные фильмы и сериалы'
             },
 
             onChange: function (value) {
@@ -751,8 +751,8 @@ function startPlugin() {
                 default: DEFAULT_MIN_PROGRESS.toString()
             },
             field: {
-                name: '–Я–Њ—А–Њ–≥ –њ—А–Њ—Б–Љ–Њ—В—А–∞',
-                description: '–Ь–Є–љ–Є–Љ–∞–ї—М–љ—Л–є –њ—А–Њ—Ж–µ–љ—В –њ—А–Њ—Б–Љ–Њ—В—А–∞ –і–ї—П —Б–Ї—А—Л—В–Є—П –Ї–Њ–љ—В–µ–љ—В–∞'
+                name: 'Порог просмотра',
+                description: 'Минимальный процент просмотра для скрытия контента'
             },
             onChange: function (value) {
                 newProgress = parseInt(value);
@@ -767,13 +767,13 @@ function startPlugin() {
             param: {
                 name: 'numparser_source_name',
                 type: 'input',
-                placeholder: '–Т–≤–µ–і–Є—В–µ –љ–∞–Ј–≤–∞–љ–Є–µ',
+                placeholder: 'Введите название',
                 values: '',
                 default: DEFAULT_SOURCE_NAME
             },
             field: {
-                name: '–Э–∞–Ј–≤–∞–љ–Є–µ –Є—Б—В–Њ—З–љ–Є–Ї–∞',
-                description: '–Ш–Ј–Љ–µ–љ–µ–љ–Є–µ –љ–∞–Ј–≤–∞–љ–Є—П –Є—Б—В–Њ—З–љ–Є–Ї–∞ –≤ –Љ–µ–љ—О'
+                name: 'Название источника',
+                description: 'Изменение названия источника в меню'
             },
             onChange: function (value) {
                 newName = value;
@@ -815,12 +815,12 @@ function startPlugin() {
             }
         });
 
-        // 1) –У–ї–∞–≤–љ–∞—П: —З—В–Њ–±—Л –њ—А–Є –≤—Л–±—А–∞–љ–љ–Њ–Љ NUMParser –љ–µ –њ–∞–і–∞–ї–Њ –Є —А–µ–і–Є—А–µ–Ї—В–Є–ї–Њ –≤ NUM category
+        // 1) Главная: чтобы при выбранном NUMParser не падало и редиректило в NUM category
         numparserApi.main = function (params, onComplete, onError) {
-            // Lampa –≤ main() –Њ–ґ–Є–і–∞–µ—В –Љ–∞—Б—Б–Є–≤ (–Є–љ–∞—З–µ data.forEach...)
+            // Lampa в main() ожидает массив (иначе data.forEach...)
             if (typeof onComplete === 'function') onComplete([]);
 
-            // –≤–Ї–ї—О—З–∞–µ–Љ —А–µ–і–Є—А–µ–Ї—В —В–Њ–ї—М–Ї–Њ –µ—Б–ї–Є NUMParser –≤—Л–±—А–∞–љ –Њ—Б–љ–Њ–≤–љ—Л–Љ –Є—Б—В–Њ—З–љ–Є–Ї–Њ–Љ
+            // включаем редирект только если NUMParser выбран основным источником
             try {
                 var current = Lampa.Storage.get('source', 'tmdb');
                 if (current !== SOURCE_NAME) return;
@@ -828,7 +828,7 @@ function startPlugin() {
                 return;
             }
 
-            // —А–µ–і–Є—А–µ–Ї—В –љ–∞ –љ–∞—И—Г –Ї–∞—В–µ–≥–Њ—А–Є—О
+            // редирект на нашу категорию
             setTimeout(function () {
                 try {
                     Lampa.Activity.replace({
@@ -843,7 +843,7 @@ function startPlugin() {
         };
 
 
-        // 2) –§–Є–ї—М–Љ—Л/–°–µ—А–Є–∞–ї—Л: –Њ—Б—В–∞–≤–Є—В—М TMDB, –і–∞–ґ–µ –µ—Б–ї–Є NUMParser –≤—Л–±—А–∞–љ –Њ—Б–љ–Њ–≤–љ—Л–Љ source
+        // 2) Фильмы/Сериалы: оставить TMDB, даже если NUMParser выбран основным source
         (function () {
             if (window.__numparser_keep_movies_tv_tmdb) return;
             window.__numparser_keep_movies_tv_tmdb = true;
@@ -854,11 +854,11 @@ function startPlugin() {
             function patch(params) {
                 if (!params) return params;
 
-                // —А–∞–±–Њ—В–∞–µ–Љ –Ґ–Ю–Ы–ђ–Ъ–Ю –µ—Б–ї–Є –њ–Њ–ї—М–Ј–Њ–≤–∞—В–µ–ї—М –≤—Л–±—А–∞–ї NUMParser –Ї–∞–Ї –Њ—Б–љ–Њ–≤–љ–Њ–є –Є—Б—В–Њ—З–љ–Є–Ї
+                // работаем ТОЛЬКО если пользователь выбрал NUMParser как основной источник
                 var current = Lampa.Storage.get('source', 'tmdb');
                 if (current !== SOURCE_NAME) return params;
 
-                // –§–Є–ї—М–Љ—Л/–°–µ—А–Є–∞–ї—Л –Њ–±—Л—З–љ–Њ: component:'category' + url:'movie'/'tv'
+                // Фильмы/Сериалы обычно: component:'category' + url:'movie'/'tv'
                 if (params.component === 'category' && (params.url === 'movie' || params.url === 'tv')) {
                     params.source = 'tmdb';
                 }
@@ -882,15 +882,15 @@ function startPlugin() {
             var sources = Object.assign({}, (Lampa.Params.values && Lampa.Params.values['source']) ? Lampa.Params.values['source'] : {});
             sources[SOURCE_NAME] = SOURCE_NAME;
 
-            // 3-–є –њ–∞—А–∞–Љ–µ—В—А вАФ –і–µ—Д–Њ–ї—В, –µ—Б–ї–Є —Г –њ–Њ–ї—М–Ј–Њ–≤–∞—В–µ–ї—П –µ—Й—С –љ–µ –≤—Л–±—А–∞–љ –Є—Б—В–Њ—З–љ–Є–Ї
-            // –Њ—Б—В–∞–≤–ї—П–µ–Љ 'tmdb', —З—В–Њ–±—Л –љ–Є–Ї–Њ–Љ—Г –≤–љ–µ–Ј–∞–њ–љ–Њ –љ–µ –њ–µ—А–µ–Ї–ї—О—З–Є—В—М –њ–Њ —Г–Љ–Њ–ї—З–∞–љ–Є—О
+            // 3-й параметр — дефолт, если у пользователя ещё не выбран источник
+            // оставляем 'tmdb', чтобы никому внезапно не переключить по умолчанию
             Lampa.Params.select('source', sources, 'tmdb');
         } catch (e) {}
 
         var menuItem = $('<li data-action="numparser" class="menu__item selector"><div class="menu__ico">' + ICON + '</div><div class="menu__text num_text">' + SOURCE_NAME + '</div></li>');
         $('.menu .menu__list').eq(0).append(menuItem);
 
-        // --- –∞–≤—В–Њ-—А–µ—Д—А–µ—И "–У–ї–∞–≤–љ–Њ–є" –њ—А–Є —Б–Љ–µ–љ–µ –Њ—Б–љ–Њ–≤–љ–Њ–≥–Њ source + —Б–Ї—А—Л—В–Є–µ –њ—Г–љ–Ї—В–∞ –Љ–µ–љ—О NUM ---
+        // --- авто-рефреш "Главной" при смене основного source + скрытие пункта меню NUM ---
         (function () {
             if (window.__numparser_source_watch) return;
             window.__numparser_source_watch = true;
@@ -901,17 +901,17 @@ function startPlugin() {
 
             function updateNumMenuVisibility() {
                 try {
-                    // –µ—Б–ї–Є NUM –≤—Л–±—А–∞–љ –Њ—Б–љ–Њ–≤–љ—Л–Љ вАФ –њ—А—П—З–µ–Љ –њ—Г–љ–Ї—В –Љ–µ–љ—О NUM (—З—В–Њ–±—Л –љ–µ –і—Г–±–ї–Є—А–Њ–≤–∞–ї—Б—П)
-                    // –љ–∞—Б—В—А–Њ–є–Ї–Є –њ—А–Є —Н—В–Њ–Љ –Њ—Б—В–∞—О—В—Б—П –≤ SettingsApi (–Љ—Л –Є—Е –љ–µ —В—А–Њ–≥–∞–µ–Љ)
+                    // если NUM выбран основным — прячем пункт меню NUM (чтобы не дублировался)
+                    // настройки при этом остаются в SettingsApi (мы их не трогаем)
                     if (isNumSelected()) menuItem.hide();
                     else menuItem.show();
                 } catch (e) {}
             }
 
-            // –њ–µ—А–≤–Є—З–љ–∞—П —Г—Б—В–∞–љ–Њ–≤–Ї–∞ –≤–Є–і–Є–Љ–Њ—Б—В–Є
+            // первичная установка видимости
             updateNumMenuVisibility();
 
-            // –њ–µ—А–µ—Е–≤–∞—В –Є–Ј–Љ–µ–љ–µ–љ–Є—П Storage.source
+            // перехват изменения Storage.source
             var origSet = Lampa.Storage.set;
             Lampa.Storage.set = function (key, value) {
                 var res = origSet.apply(this, arguments);
@@ -923,7 +923,7 @@ function startPlugin() {
                         var active = Lampa.Activity.active && Lampa.Activity.active();
                         if (active && active.component === 'main') {
 
-                            // –Х—Б–ї–Є –≤—Л–±—А–∞–ї–Є NUM вАФ —Б—А–∞–Ј—Г —Г—Е–Њ–і–Є–Љ –≤ NUM category (–±–µ–Ј –њ–Њ–њ—Л—В–Ї–Є –њ–µ—А–µ—Б–Њ–Ј–і–∞—В—М main)
+                            // Если выбрали NUM — сразу уходим в NUM category (без попытки пересоздать main)
                             if (value === SOURCE_NAME) {
                                 Lampa.Activity.replace({
                                     title: SOURCE_NAME,
@@ -933,7 +933,7 @@ function startPlugin() {
                                     url: ''
                                 });
                             }
-                            // –Х—Б–ї–Є –≤–µ—А–љ—Г–ї–Є—Б—М –љ–∞ tmdb вАФ –њ–µ—А–µ—Б–Њ–±–Є—А–∞–µ–Љ –Њ–±—Л—З–љ—Г—О –≥–ї–∞–≤–љ—Г—О
+                            // Если вернулись на tmdb — пересобираем обычную главную
                             else {
                                 Lampa.Activity.replace({ component: 'main' });
                             }
