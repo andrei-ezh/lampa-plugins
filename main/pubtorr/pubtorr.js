@@ -6,99 +6,66 @@
         lme_parser: {
           ru: 'Каталог парсеров',
           en: 'Parsers catalog',
-          uk: 'Каталог парсерів',
-          zh: '解析器目录' // Chinese translation
         },
         lme_parser_description: {
           ru: 'Нажмите для выбора парсера из ',
           en: 'Click to select a parser from the ',
-          uk: 'Натисніть для вибору парсера з ',
-          zh: '单击以从可用的 '
         },
         lme_parser_current: {
           ru: 'Текущий выбор:',
           en: 'Current selection:',
-          uk: 'Поточний вибір:',
-          zh: '当前选择：'
         },
         lme_parser_selected: {
           ru: 'Выбрано',
           en: 'Selected',
-          uk: 'Обрано',
-          zh: '已选择'
         },
         lme_parser_refresh: {
           ru: 'Обновить проверку',
           en: 'Refresh check',
-          uk: 'Оновити перевірку',
-          zh: '刷新检测'
         },
         lme_parser_none: {
           ru: 'Не выбран',
           en: 'Not selected',
-          uk: 'Не вибрано',
-          zh: '未选择'
         },
         lme_parser_none_description: {
           ru: 'Без активного парсера',
           en: 'No active parser',
-          uk: 'Без активного парсера',
-          zh: '未启用解析器'
         },
         lme_parser_health: {
           ru: 'Индикация состояния парсеров',
           en: 'Parser health indicator',
-          uk: 'Індикація стану парсерів',
-          zh: '解析器状态指示'
         },
         lme_parser_status_ok: {
           ru: 'Доступен',
           en: 'Available',
-          uk: 'Доступний',
-          zh: '可用'
         },
         lme_parser_status_auth: {
           ru: 'Ошибка ключа',
           en: 'Auth error',
-          uk: 'Помилка ключа',
-          zh: '密钥错误'
         },
         lme_parser_status_network: {
           ru: 'Недоступен',
           en: 'Unavailable',
-          uk: 'Недоступний',
-          zh: '不可用'
         },
         lme_parser_status_unknown: {
           ru: 'Не проверен',
           en: 'Unchecked',
-          uk: 'Не перевірено',
-          zh: '未检查'
         },
         lme_parser_status_checking: {
           ru: 'Проверка...',
           en: 'Checking...',
-          uk: 'Перевірка...',
-          zh: '检查中...'
         },
         lme_pubtorr: {
           ru: 'Каталог TorrServer',
           en: 'TorrServer catalog',
-          uk: 'Каталог TorrServer',
-          zh: '解析器目录' // Chinese translation
         },
         lme_pubtorr_description: {
           ru: 'Бесплатные серверы от проекта LME',
           en: 'Free servers from the LME project',
-          uk: 'Безкоштовні сервери від проєкту LME',
-          zh: '来自 LME 项目的免费服务器 '
         },
         lme_pubtorr_firstrun: {
           "ru": "Привет! Ты установил плагин LME PubTorr, учти что если стоит Mods's то в разделе парсеров будет ошибка, которая не влияет на работу. Хочешь избавиться - оставь или LME PubTorr или Mods's.",
           "en": "Hello! You have installed the LME PubTorr plugin. Note that if Mods's is enabled, there will be an error in the parsers section that does not affect functionality. If you want to get rid of it, keep either LME PubTorr or Mods's.",
-          "uk": "Привіт! Ви встановили плагін LME PubTorr, врахуйте, що якщо активовано Mods's, то в розділі парсерів буде помилка, яка не впливає на роботу. Якщо хочете позбутися - залиште або LME PubTorr, або Mods's.",
-          "zh": "你好！你安装了LME PubTorr插件，请注意，如果启用了Mods's，解析器部分将出现错误，但这不会影响功能。如果你想摆脱它，请保留LME PubTorr或Mods's。"
-        }
       });
     }
     var Lang = {
@@ -114,40 +81,40 @@
         parser_torrent_type: 'jackett'
       }
     }, {
-      id: 'jacred_viewbox_dev',
-      name: 'Viewbox',
+      id: 'ru_jacred_pro',
+      name: 'ru.jacred.pro',
       settings: {
-        url: 'jacred.viewbox.dev',
-        key: 'viewbox',
-        parser_torrent_type: 'jackett'
-      }
-    }, {
-      id: 'unknown',
-      name: 'Unknown',
-      settings: {
-        url: '188.119.113.252:9117',
-        key: '1',
-        parser_torrent_type: 'jackett'
-      }
-    }, {
-      id: 'trs_my_to',
-      name: 'Trs.my.to',
-      settings: {
-        url: 'trs.my.to:9118',
+        url: 'ru.jacred.pro',
         key: '',
         parser_torrent_type: 'jackett'
       }
     }, {
-      id: 'jacred_my_to',
-      name: 'Jacred.my.to',
+      id: 'jac_red',
+      name: 'jac.red',
       settings: {
-        url: 'jacred.my.to',
+        url: 'jac.red',
+        key: '',
+        parser_torrent_type: 'jackett'
+      }
+    }, {
+      id: 'nmjc_duckdns_org',
+      name: 'nmjc.duckdns.org',
+      settings: {
+        url: 'nmjc.duckdns.org',
+        key: '',
+        parser_torrent_type: 'jackett'
+      }
+    }, {
+      id: 'jr_maxvol_pro',
+      name: 'jr.maxvol.pro',
+      settings: {
+        url: 'jr.maxvol.pro',
         key: '',
         parser_torrent_type: 'jackett'
       }
     }, {
       id: 'jacred_xyz',
-      name: 'Jacred.xyz',
+      name: 'jacred.xyz',
       settings: {
         url: 'jacred.xyz',
         key: '',
