@@ -98,22 +98,6 @@
         parser_torrent_type: 'jackett'
       }
     }, {
-      id: 'nmjc_duckdns_org',
-      name: 'nmjc.duckdns.org',
-      settings: {
-        url: 'nmjc.duckdns.org',
-        key: '',
-        parser_torrent_type: 'jackett'
-      }
-    }, {
-      id: 'jr_maxvol_pro',
-      name: 'jr.maxvol.pro',
-      settings: {
-        url: 'jr.maxvol.pro',
-        key: '',
-        parser_torrent_type: 'jackett'
-      }
-    }, {
       id: 'jacred_xyz',
       name: 'jacred.xyz',
       settings: {
