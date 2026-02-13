@@ -99,7 +99,7 @@
       }
     }, {
       id: 'jacred_xyz',
-      name: 'jacred.xyz',
+      name: 'Jacred.xyz',
       settings: {
         url: 'jacred.xyz',
         key: '',
