@@ -1,4 +1,7 @@
 # Плагины для Lampa
+
+LME: https://glowing-porpoise-066.notion.site/Lampa-Movie-Enhancer-2dfa431760078015beace0d357e19545
+
 1. Оригинальные названия
 ```
 https://bdvburik.github.io/title.js
