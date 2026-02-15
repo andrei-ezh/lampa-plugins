@@ -133,6 +133,13 @@ https://num.jac-red.ru/plugin/nmprs.js
 ```
 https://andrei-ezh.github.io/lampa-plugins/main/NUMParser.js
 ```
+15. New category
+```
+https://lampame.github.io/main/newcategory.js
+```
+```
+https://andrei-ezh.github.io/lampa-plugins/main/newcategory.js
+```
 
 ## Для того, чтобы скопировать код из недоступного плагина, нужно использовать: 
 ```
