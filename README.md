@@ -133,12 +133,19 @@ https://num.jac-red.ru/plugin/nmprs.js
 ```
 https://andrei-ezh.github.io/lampa-plugins/main/NUMParser.js
 ```
-15. New category
+16. New category
 ```
 https://lampame.github.io/main/newcategory.js
 ```
 ```
 https://andrei-ezh.github.io/lampa-plugins/main/newcategory.js
+```
+17. No trailer
+```
+http://llpp.in/ur/notrailer.js
+```
+```
+https://andrei-ezh.github.io/lampa-plugins/main/notrailer.js
 ```
 
 ## Для того, чтобы скопировать код из недоступного плагина, нужно использовать: 
